@@ -1,78 +1,41 @@
-# Product Name
-> Short blurb about what your product does.
+# Bioinformatics Mini Tools V 1.0
+> Bioinformatics tool
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+Through our program you can download databases, do pairwise alignment, or multiple sequence alignment.
 
-One to two paragraph statement about your product and what it does.
+## Prerequisites to run the program
 
-![](header.png)
+To run the program you NEED to download these tools (efetch, BLAST, MAFFT, and FastTree). IF you use UBUNTU, use these commands:
 
-## Installation
-
-OS X & Linux:
-
+(It`s RECOMMENDED to run this command first)
 ```sh
-npm install my-crazy-module --save
+sudo apt-get update
+```
+```sh
+sudo apt-get install efetch or sudo apt-get install -y efetch
+sudo apt install ncbi-blast+
+sudo apt-get install mafft
+sudo apt-get install fasttree
 ```
 
-Windows:
+To run the GUI correctly you NEED to download these packages ( Python3, PysimpleGUI, BioPython, and Matplotlib). IF you use UBUNTU, use these commands:
 
 ```sh
-edit autoexec.bat
+sudo apt install python3
+pip3 install PySimpleGUI
+pip3 install BioPython
+pip3 install Matplotlib
 ```
+(IF the error **externally-managed-environment** appeared to you while using pip3 command, add this line with each code **--break-system-packages**).
 
-## Usage example
+## Running the program
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+Download the program file then open the terminal in it, type **python3 main.py** or if you have VISUAL STUDIO CODE open the program file through it then run the program.
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
+* After that you can choose what would you like to do, if you want to **RETRIEVE DATABASE**, **CHOOSE** it then **ENTER the accession number of the database**.
 
-## Development setup
+* If you want **PAIRWISE ALIGNMENT**, **CHOOSE** it then **add your reference and query sequence** then wait until the results are saved.
 
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+* If you want **MULTIPLE SEQUENCE ALIGNMENT**, **CHOOSE** it and **ENTER your accession numbers** then wait until the results are saved.
 
-```sh
-make install
-npm test
-```
-
-## Release History
-
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
-* 0.0.1
-    * Work in progress
-
-## Meta
-
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
-
-Distributed under the XYZ license. See ``LICENSE`` for more information.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
-
-## Contributing
-
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
+Finally i hope that our software met your expectations. **(:**
