@@ -1,11 +1,7 @@
-# Product Name
-> Short blurb about what your product does.
+# Bioinformatics Mini Tools V 1.0
+> Bioinformatics tool
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
-One to two paragraph statement about your product and what it does.
+Through our program you can download databases, do pairwise alignment, or multiple sequence alignment.
 
 ![](header.png)
 
